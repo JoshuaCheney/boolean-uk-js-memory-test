@@ -14,16 +14,20 @@ function randomNumberGenerator() {
 }
   const checkRandomNumber = randomNumberGenerator();
   console.log("Numbers: ", checkRandomNumber);
+  alert(checkRandomNumber)
 
 function displayNumbers() {
 
 }
 
-function storedNumbers() {
-    let promptedNumbers = [];
+let storedInput = [];
+console.log(storedInput);
 
-    for (let i = 0; i < displayNumbers.length; i++) {
-        const displayList = displayNumbers[i];
-        
-    }
+function savedSelectedNumber() {
+  const storedInput = setTimeout(savedSelectedNumber, 15000);prompt("Enter the number in the right order: ");
+  
+  return storedInput;
 }
+
+const userSelectedNumber = savedSelectedNumber();
+console.log(userSelectedNumber);
